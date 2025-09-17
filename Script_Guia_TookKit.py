@@ -266,9 +266,9 @@ class ToolkitMenu:
                 if 0 <= opcao <= 10:
                     return opcao
                 else:
-                    print("❌ Opção inválida! Digite um número entre 0 e 10.")
+                    print("Opção inválida! Digite um número entre 0 e 10.")
             except ValueError:
-                print("❌ Por favor, digite um número válido.")
+                print("Por favor, digite um número válido.")
     
     def executar_opcao(self, opcao: int):
         """Executa a opção escolhida"""

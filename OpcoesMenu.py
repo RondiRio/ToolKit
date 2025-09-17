@@ -1,13 +1,14 @@
 from abc import ABC, abstractmethod
-from typing import Dict, Callable
 
 class OpcoesMenu(ABC):
-    def __init__(self, titulo: str, descricao: str):
+    def __init__(self, titulo: str, descricao: str = ""):
         self.titulo = titulo
-        self.descricao = descricao
+        self.descricao = descricao if descricao else titulo
     
     @abstractmethod
     def executar(self):
-        # executa as funcionalidades da opção
+        """Executa as funcionalidades da opção"""
         pass
     
+    def __str__(self):
+        return f"{self.titulo}: {self.descricao}"
