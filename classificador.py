@@ -6,6 +6,6 @@ class classificador(OpcoesMenu):
     
     def executar(self):
         print(f"=== {self.descricao} ===")
-        print("Aqui, classificamos strings como T = Terminadas, I = Infinitas ou N = Nulas")
+        print("Aqui, classificamos strings como T = Terminadasdas, I = Infinitas ou N = Nulas")
         print('ainda não implementamos')
     
